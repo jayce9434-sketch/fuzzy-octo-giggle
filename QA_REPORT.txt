@@ -1,0 +1,57 @@
+CRASHFLOCK V3 REBUILD QA REPORT
+Generated: 2026-10-26
+
+CAMPAIGN
+- Bird side: 200 levels
+- Pig side: 200 levels
+- Total: 400 levels
+- Boss cadence per story: 5 / 10 / 15 / 20
+
+FINAL CERTIFICATION
+- Campaign certification: 400/400 PASS
+- 3-star reachability failures: 0
+- Unique structure fingerprints: 400/400
+- Block systems represented: 20/20
+- Layout families: 23
+
+3-STAR BALANCE TESTS
+- Level 1 certified clear: 3 STARS
+  - 3-star target: 2,950
+  - certified clear score: 3,400
+- Level 37 certified clear: 3 STARS
+  - 3-star target: 4,250
+  - tested clear score: 4,680
+- All 400 levels: level.stars[2] <= certified clean-clear score
+
+PHYSICS REBUILD
+- Unsupported blocks receive gravity.
+- Generated layouts receive visible structural supports instead of floating platforms.
+- Supports are destructible.
+- Targets track physical support and fall when support disappears.
+- Falling blocks can crush targets after gameplay begins.
+- Falling targets can be eliminated by hard ground impacts.
+- Blocks receive lateral/angular impulse feedback from hits.
+- Initial structure settling cannot award free score or destroy targets before the player fires.
+
+FEATURE QA
+- Settings screen present and interactive.
+- Music/SFX controls present.
+- Owner Menu present and interactive.
+- Daily Contracts present.
+- Permanent achievements present.
+- Export/reset save controls present.
+- New custom icon present at 192 and 512 sizes.
+- Dedicated launcher PNG present.
+- Bird and pig sprite sheets rebuilt.
+- Six themed environment backgrounds rebuilt.
+
+BROWSER QA
+- Runtime loaded in headless Chromium with zero page JavaScript errors.
+- Five screenshots captured from the running build.
+- Home, Settings, Owner Menu, Challenges, and gameplay screens rendered successfully.
+
+REPOSITORY RULES
+- Flat/root-only project: PASS
+- Total project files: 26
+- <=100 files: PASS
+- No folders required in ZIP: PASS
